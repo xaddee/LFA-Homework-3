@@ -6,7 +6,7 @@
 
 void State::setFinal(bool is_final)
 {
-    _is_final = a;
+    _is_final = is_final;
 }
 
 void State::setIndex(int index)
@@ -14,7 +14,7 @@ void State::setIndex(int index)
     _index = index;
 }
 
-int showIndex()
+int State::showIndex()
 {
     return _index;
 }
@@ -22,4 +22,14 @@ int showIndex()
 bool State::showFinal()
 {
     return _is_final;
+}
+
+void State::setNumberOfEdges(int number)
+{
+    _number_of_edges = number;
+}
+
+int State::showNumberOfEdges()
+{
+    return _number_of_edges;
 }

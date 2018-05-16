@@ -80,45 +80,71 @@ CMakeFiles/LFA_Homework_3.dir/main.cpp.obj.provides: CMakeFiles/LFA_Homework_3.d
 CMakeFiles/LFA_Homework_3.dir/main.cpp.obj.provides.build: CMakeFiles/LFA_Homework_3.dir/main.cpp.obj
 
 
-CMakeFiles/LFA_Homework_3.dir/States.cpp.obj: CMakeFiles/LFA_Homework_3.dir/flags.make
-CMakeFiles/LFA_Homework_3.dir/States.cpp.obj: ../States.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LFA_Homework_3.dir/States.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LFA_Homework_3.dir\States.cpp.obj -c C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\States.cpp
+CMakeFiles/LFA_Homework_3.dir/State.cpp.obj: CMakeFiles/LFA_Homework_3.dir/flags.make
+CMakeFiles/LFA_Homework_3.dir/State.cpp.obj: ../State.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LFA_Homework_3.dir/State.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LFA_Homework_3.dir\State.cpp.obj -c C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\State.cpp
 
-CMakeFiles/LFA_Homework_3.dir/States.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LFA_Homework_3.dir/States.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\States.cpp > CMakeFiles\LFA_Homework_3.dir\States.cpp.i
+CMakeFiles/LFA_Homework_3.dir/State.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LFA_Homework_3.dir/State.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\State.cpp > CMakeFiles\LFA_Homework_3.dir\State.cpp.i
 
-CMakeFiles/LFA_Homework_3.dir/States.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LFA_Homework_3.dir/States.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\States.cpp -o CMakeFiles\LFA_Homework_3.dir\States.cpp.s
+CMakeFiles/LFA_Homework_3.dir/State.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LFA_Homework_3.dir/State.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\State.cpp -o CMakeFiles\LFA_Homework_3.dir\State.cpp.s
 
-CMakeFiles/LFA_Homework_3.dir/States.cpp.obj.requires:
+CMakeFiles/LFA_Homework_3.dir/State.cpp.obj.requires:
 
-.PHONY : CMakeFiles/LFA_Homework_3.dir/States.cpp.obj.requires
+.PHONY : CMakeFiles/LFA_Homework_3.dir/State.cpp.obj.requires
 
-CMakeFiles/LFA_Homework_3.dir/States.cpp.obj.provides: CMakeFiles/LFA_Homework_3.dir/States.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/States.cpp.obj.provides.build
-.PHONY : CMakeFiles/LFA_Homework_3.dir/States.cpp.obj.provides
+CMakeFiles/LFA_Homework_3.dir/State.cpp.obj.provides: CMakeFiles/LFA_Homework_3.dir/State.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/State.cpp.obj.provides.build
+.PHONY : CMakeFiles/LFA_Homework_3.dir/State.cpp.obj.provides
 
-CMakeFiles/LFA_Homework_3.dir/States.cpp.obj.provides.build: CMakeFiles/LFA_Homework_3.dir/States.cpp.obj
+CMakeFiles/LFA_Homework_3.dir/State.cpp.obj.provides.build: CMakeFiles/LFA_Homework_3.dir/State.cpp.obj
+
+
+CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj: CMakeFiles/LFA_Homework_3.dir/flags.make
+CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj: ../Edge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LFA_Homework_3.dir\Edge.cpp.obj -c C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\Edge.cpp
+
+CMakeFiles/LFA_Homework_3.dir/Edge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LFA_Homework_3.dir/Edge.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\Edge.cpp > CMakeFiles\LFA_Homework_3.dir\Edge.cpp.i
+
+CMakeFiles/LFA_Homework_3.dir/Edge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LFA_Homework_3.dir/Edge.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-7~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\Edge.cpp -o CMakeFiles\LFA_Homework_3.dir\Edge.cpp.s
+
+CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj.requires:
+
+.PHONY : CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj.requires
+
+CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj.provides: CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj.provides.build
+.PHONY : CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj.provides
+
+CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj.provides.build: CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj
 
 
 # Object files for target LFA_Homework_3
 LFA_Homework_3_OBJECTS = \
 "CMakeFiles/LFA_Homework_3.dir/main.cpp.obj" \
-"CMakeFiles/LFA_Homework_3.dir/States.cpp.obj"
+"CMakeFiles/LFA_Homework_3.dir/State.cpp.obj" \
+"CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj"
 
 # External object files for target LFA_Homework_3
 LFA_Homework_3_EXTERNAL_OBJECTS =
 
 LFA_Homework_3.exe: CMakeFiles/LFA_Homework_3.dir/main.cpp.obj
-LFA_Homework_3.exe: CMakeFiles/LFA_Homework_3.dir/States.cpp.obj
+LFA_Homework_3.exe: CMakeFiles/LFA_Homework_3.dir/State.cpp.obj
+LFA_Homework_3.exe: CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj
 LFA_Homework_3.exe: CMakeFiles/LFA_Homework_3.dir/build.make
 LFA_Homework_3.exe: CMakeFiles/LFA_Homework_3.dir/linklibs.rsp
 LFA_Homework_3.exe: CMakeFiles/LFA_Homework_3.dir/objects1.rsp
 LFA_Homework_3.exe: CMakeFiles/LFA_Homework_3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LFA_Homework_3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Adelin\Documents\GitHub\LFA-Homework-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable LFA_Homework_3.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\LFA_Homework_3.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,7 +153,8 @@ CMakeFiles/LFA_Homework_3.dir/build: LFA_Homework_3.exe
 .PHONY : CMakeFiles/LFA_Homework_3.dir/build
 
 CMakeFiles/LFA_Homework_3.dir/requires: CMakeFiles/LFA_Homework_3.dir/main.cpp.obj.requires
-CMakeFiles/LFA_Homework_3.dir/requires: CMakeFiles/LFA_Homework_3.dir/States.cpp.obj.requires
+CMakeFiles/LFA_Homework_3.dir/requires: CMakeFiles/LFA_Homework_3.dir/State.cpp.obj.requires
+CMakeFiles/LFA_Homework_3.dir/requires: CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj.requires
 
 .PHONY : CMakeFiles/LFA_Homework_3.dir/requires
 

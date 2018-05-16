@@ -9,14 +9,20 @@
 class State {
 
     int _index;
-    bool _is_final = false;
+    int _number_of_edges;
+    bool _is_final;
+
 
 public:
+    inline State() {_index = -1; _is_final = false;};
+    ~State() = default;
     void setFinal(bool);
     void setIndex(int);
+    void setNumberOfEdges(int);
 
     bool showFinal();
     int showIndex();
+    int showNumberOfEdges();
 
 };
 

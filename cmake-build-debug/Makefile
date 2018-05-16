@@ -122,32 +122,59 @@ LFA_Homework_3/fast:
 	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/build
 .PHONY : LFA_Homework_3/fast
 
-States.obj: States.cpp.obj
+Edge.obj: Edge.cpp.obj
 
-.PHONY : States.obj
+.PHONY : Edge.obj
 
 # target to build an object file
-States.cpp.obj:
-	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/States.cpp.obj
-.PHONY : States.cpp.obj
+Edge.cpp.obj:
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj
+.PHONY : Edge.cpp.obj
 
-States.i: States.cpp.i
+Edge.i: Edge.cpp.i
 
-.PHONY : States.i
+.PHONY : Edge.i
 
 # target to preprocess a source file
-States.cpp.i:
-	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/States.cpp.i
-.PHONY : States.cpp.i
+Edge.cpp.i:
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/Edge.cpp.i
+.PHONY : Edge.cpp.i
 
-States.s: States.cpp.s
+Edge.s: Edge.cpp.s
 
-.PHONY : States.s
+.PHONY : Edge.s
 
 # target to generate assembly for a file
-States.cpp.s:
-	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/States.cpp.s
-.PHONY : States.cpp.s
+Edge.cpp.s:
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/Edge.cpp.s
+.PHONY : Edge.cpp.s
+
+State.obj: State.cpp.obj
+
+.PHONY : State.obj
+
+# target to build an object file
+State.cpp.obj:
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/State.cpp.obj
+.PHONY : State.cpp.obj
+
+State.i: State.cpp.i
+
+.PHONY : State.i
+
+# target to preprocess a source file
+State.cpp.i:
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/State.cpp.i
+.PHONY : State.cpp.i
+
+State.s: State.cpp.s
+
+.PHONY : State.s
+
+# target to generate assembly for a file
+State.cpp.s:
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/State.cpp.s
+.PHONY : State.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -185,9 +212,12 @@ help:
 	@echo ... LFA_Homework_3
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... States.obj
-	@echo ... States.i
-	@echo ... States.s
+	@echo ... Edge.obj
+	@echo ... Edge.i
+	@echo ... Edge.s
+	@echo ... State.obj
+	@echo ... State.i
+	@echo ... State.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -3,4 +3,4 @@ project(LFA_Homework_3)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(LFA_Homework_3 main.cpp States.cpp States.h)
+add_executable(LFA_Homework_3 main.cpp State.cpp State.h Edge.cpp Edge.h)

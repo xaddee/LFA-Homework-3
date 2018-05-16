@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/States.cpp" "C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/cmake-build-debug/CMakeFiles/LFA_Homework_3.dir/States.cpp.obj"
+  "C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/Edge.cpp" "C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/cmake-build-debug/CMakeFiles/LFA_Homework_3.dir/Edge.cpp.obj"
+  "C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/State.cpp" "C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/cmake-build-debug/CMakeFiles/LFA_Homework_3.dir/State.cpp.obj"
   "C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/main.cpp" "C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/cmake-build-debug/CMakeFiles/LFA_Homework_3.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

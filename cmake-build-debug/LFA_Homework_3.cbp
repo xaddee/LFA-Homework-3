@@ -80,10 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/States.cpp">
+		<Unit filename="C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/Edge.cpp">
 			<Option target="LFA_Homework_3"/>
 		</Unit>
-		<Unit filename="C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/States.h">
+		<Unit filename="C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/Edge.h">
+			<Option target="LFA_Homework_3"/>
+		</Unit>
+		<Unit filename="C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/State.cpp">
+			<Option target="LFA_Homework_3"/>
+		</Unit>
+		<Unit filename="C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/State.h">
 			<Option target="LFA_Homework_3"/>
 		</Unit>
 		<Unit filename="C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/main.cpp">
