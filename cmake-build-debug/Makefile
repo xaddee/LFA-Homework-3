@@ -122,6 +122,33 @@ LFA_Homework_3/fast:
 	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/build
 .PHONY : LFA_Homework_3/fast
 
+States.obj: States.cpp.obj
+
+.PHONY : States.obj
+
+# target to build an object file
+States.cpp.obj:
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/States.cpp.obj
+.PHONY : States.cpp.obj
+
+States.i: States.cpp.i
+
+.PHONY : States.i
+
+# target to preprocess a source file
+States.cpp.i:
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/States.cpp.i
+.PHONY : States.cpp.i
+
+States.s: States.cpp.s
+
+.PHONY : States.s
+
+# target to generate assembly for a file
+States.cpp.s:
+	$(MAKE) -f CMakeFiles\LFA_Homework_3.dir\build.make CMakeFiles/LFA_Homework_3.dir/States.cpp.s
+.PHONY : States.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... LFA_Homework_3
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... States.obj
+	@echo ... States.i
+	@echo ... States.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

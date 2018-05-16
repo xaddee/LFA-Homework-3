@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LFA_Homework_3.dir/main.cpp.obj"
+  "CMakeFiles/LFA_Homework_3.dir/States.cpp.obj"
   "LFA_Homework_3.pdb"
   "LFA_Homework_3.exe"
   "LFA_Homework_3.exe.manifest"

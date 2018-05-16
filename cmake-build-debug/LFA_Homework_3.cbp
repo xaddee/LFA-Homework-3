@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/States.cpp">
+			<Option target="LFA_Homework_3"/>
+		</Unit>
+		<Unit filename="C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/States.h">
+			<Option target="LFA_Homework_3"/>
+		</Unit>
 		<Unit filename="C:/Users/Adelin/Documents/GitHub/LFA-Homework-3/main.cpp">
 			<Option target="LFA_Homework_3"/>
 		</Unit>
