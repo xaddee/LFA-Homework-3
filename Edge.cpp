@@ -44,22 +44,42 @@ void Edge::setPush(bool push)
     _push = push;
 }
 
-void Edge::setPopLetters(std::string letters)
+bool Edge::showPop()
 {
-    _pop_letters = letters;
+    return _pop;
 }
 
-void Edge::setPushLetters(std::string letters)
+bool Edge::showPush()
+{
+    return _push;
+}
+
+void Edge::setTimesToPop(int times)
+{
+    _times_to_pop = times;
+}
+
+void Edge::setHowManyLetters(unsigned int number_of_letters)
+{
+    _how_many_letters = number_of_letters;
+}
+
+void Edge::setPushLetters(std::vector<LetterToPush> letters)
 {
     _push_letters = letters;
 }
 
-std::string Edge::showPopLetters()
+int Edge::showTimesToPop()
 {
-    return _pop_letters;
+    return _times_to_pop;
 }
 
-std::string Edge::showPushLetters()
+int Edge::showHowManyLetters()
+{
+    return _how_many_letters;
+}
+
+std::vector<LetterToPush> Edge::showLettersToPush()
 {
     return _push_letters;
 }

@@ -14,7 +14,7 @@ class State {
 
 
 public:
-    inline State() {_index = -1; _is_final = false;};
+    inline State() {_index = -1; _is_final = false; _number_of_edges = 0; };
     ~State() = default;
     void setFinal(bool);
     void setIndex(int);

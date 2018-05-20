@@ -7,7 +7,14 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include "State.h"
+
+struct LetterToPush
+{
+    std::string letter;
+    int times;
+};
 
 class Edge {
 
@@ -16,13 +23,14 @@ class Edge {
 
     std::string _letter;
     bool _pop;
+    int _times_to_pop;
     bool _push;
 
-    std::string _pop_letters;
-    std::string _push_letters;
+    unsigned int _how_many_letters;
+    std::vector<LetterToPush> _push_letters;
 
 public:
-   inline Edge() { _letter = "#"; _pop =  false; _push =  false;};
+   inline Edge() { _letter = "#"; _pop =  false; _push =  false; _times_to_pop = 0; _how_many_letters = 0; _push_letters.resize(_how_many_letters)};
     ~Edge() = default;
 
     void setCurrentState(State);
@@ -30,14 +38,21 @@ public:
     void setLetter(std::string);
     void setPop(bool);
     void setPush(bool);
-    void setPopLetters(std::string);
-    void setPushLetters(std::string);
+    void setTimesToPop(int);
+    void setHowManyLetters(unsigned int);
+    void setPushLetters(std::vector<LetterToPush>);
 
     State showCurrentState();
     State showNextState();
 
+    bool showPop();
+    bool showPush();
+
+    int showTimesToPop();
+    int showHowManyLetters();
+    std::vector<LetterToPush> showLettersToPush();
+
     std::string showLetter();
-    std::string showPopLetters();
     std::string showPushLetters();
 };
 
