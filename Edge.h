@@ -15,25 +15,30 @@ class Edge {
     State _next_state;
 
     std::string _letter;
-    std::string _content;
-    std::string _push_or_pop;
+    bool _pop;
+    bool _push;
+
+    std::string _pop_letters;
+    std::string _push_letters;
 
 public:
-   inline Edge() { _letter = "#"; _content = ""; _push_or_pop = "";};
+   inline Edge() { _letter = "#"; _pop =  false; _push =  false;};
     ~Edge() = default;
 
     void setCurrentState(State);
     void setNextState(State);
     void setLetter(std::string);
-    void pushOrPop(std::string);
-    void whatToPushOrPop(std::string);
+    void setPop(bool);
+    void setPush(bool);
+    void setPopLetters(std::string);
+    void setPushLetters(std::string);
 
     State showCurrentState();
     State showNextState();
 
     std::string showLetter();
-    std::string showPushOrPop();
-    std::string showWhatToPushOrPop();
+    std::string showPopLetters();
+    std::string showPushLetters();
 };
 
 

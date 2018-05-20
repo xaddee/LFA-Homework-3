@@ -56,12 +56,40 @@ int main() {
             f >> next_state_index;
 
             edges[current_state][current_edge].setNextState(states[next_state_index]);
+
+            bool pop,push;
+            f >> pop;
+            f >> push;
+
+            edges[current_state][current_edge].setPop(pop);
+            edges[current_state][current_edge].setPush(push);
+
+            if(pop)
+            {
+                std::string letters_to_pop;
+                f >> letters_to_pop;
+                edges[current_state][current_edge].setPopLetters(letters_to_pop);
+            }
+
+            if(push)
+            {
+                std::string letters_to_push;
+                f >> letters_to_push;
+                edges[current_state][current_edge].setPushLetters(letters_to_push);
+            }
         }
     }
 
+    std::string word;
+    f >> word;
 
-
-
+    if (word == "#") {
+        if (states[0].showFinal()) std::cout << "Cuvantul apartine alfabetului";
+        else std::cout << "Cuvantul nu apartine alfabetului";
+    } else {
+        if (PDA(word, states[0], edges, 0, stack)) std::cout << " Cuvantul apartine alfabetului";
+        else std::cout << "Cuvantul nu apartine alfabetului";
+    }
 
 
     for(int i = 0; i < number_of_states; i++) delete[] edges[i];

@@ -14,16 +14,6 @@ void Edge::setLetter(std::string letter)
     _letter = letter;
 }
 
-void Edge::pushOrPop(std::string push_or_pop)
-{
-    _push_or_pop = push_or_pop;
-}
-
-void Edge::whatToPushOrPop(std::string content)
-{
-    _content = content;
-}
-
 State Edge::showCurrentState()
 {
     return _current_state;
@@ -39,17 +29,37 @@ std::string Edge::showLetter()
     return _letter;
 }
 
-std::string Edge::showPushOrPop()
-{
-    return _push_or_pop;
-}
-
-std::string Edge::showWhatToPushOrPop()
-{
-    return _content;
-}
-
 void Edge::setNextState(State next_state)
 {
     _next_state = next_state;
+}
+
+void Edge::setPop(bool pop)
+{
+    _pop = pop;
+}
+
+void Edge::setPush(bool push)
+{
+    _push = push;
+}
+
+void Edge::setPopLetters(std::string letters)
+{
+    _pop_letters = letters;
+}
+
+void Edge::setPushLetters(std::string letters)
+{
+    _push_letters = letters;
+}
+
+std::string Edge::showPopLetters()
+{
+    return _pop_letters;
+}
+
+std::string Edge::showPushLetters()
+{
+    return _push_letters;
 }
