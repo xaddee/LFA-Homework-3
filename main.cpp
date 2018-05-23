@@ -5,30 +5,36 @@
 #include "State.h"
 #include "Edge.h"
 
-bool PDA(std::string word, State start_of_edge, Edge **edges, int current_letter_index, std::stack stack)
+bool PDA(std::string word, State start_of_edge, Edge **edges, int current_letter_index, std::stack<std::string>& stack)
 {
-    if (current_letter_index == word.length() && start_of_edge.showFinal() && stack.empty()) return true;
+    if (current_letter_index == word.length() + 1  && start_of_edge.showFinal() && stack.empty()) return true;
 
-    if (current_letter_index == word.length() && !start_of_edge.showFinal()) return false;
+    if (current_letter_index == word.length() + 1  && !start_of_edge.showFinal() && stack.empty()) return false;
 
     for (int i = 0; i < start_of_edge.showNumberOfEdges(); i++)
     {
+        if(current_letter_index == word.length()  && edges[start_of_edge.showIndex()][i].showLetter()[0] == '#')
+        {
+            if(stack.empty())  return false;
+            stack.pop();
+            if(PDA(word, edges[start_of_edge.showIndex()][i].showNextState(), edges, current_letter_index + 1 , stack)) return true;
+        }
+
         if (edges[start_of_edge.showIndex()][i].showLetter()[0] == word[current_letter_index])
         {
 
             if(edges[start_of_edge.showIndex()][i].showPop() && !stack.empty())
             {
                 for(int j = 0; j < edges[start_of_edge.showIndex()][i].showTimesToPop(); j++)
-                stack.pop();
-            }
-            else if (edges[start_of_edge.showIndex()][i].showPop() && stack.empty()) return false;
+                if(!stack.empty()) stack.pop();
+            } else if (edges[start_of_edge.showIndex()][i].showPop() && stack.empty()) return false;
 
             if(edges[start_of_edge.showIndex()][i].showPush())
             {
                 std::vector<LetterToPush> letters;
                 letters = edges[start_of_edge.showIndex()][i].showLettersToPush();
 
-                for(const LetterToPush& current : letters)
+                for( LetterToPush current : letters)
                 {
                     for(int k = 0; k < current.times; k++)
                     stack.push(current.letter);
@@ -47,9 +53,9 @@ bool PDA(std::string word, State start_of_edge, Edge **edges, int current_letter
 // empty word is '#'
 int main() {
 
-    std::ifstream f("date.txt");
+    std::ifstream f("../date.txt");
 
-    unsigned int number_of_states;
+    unsigned int number_of_states = 0;
     f >> number_of_states;
 
     std::vector<State> states;
@@ -58,15 +64,13 @@ int main() {
     std::stack<std::string> stack;
     stack.push("s");
 
-    int index = 0;
-    for(State current_state : states)
+    for(int current_state = 0; current_state < number_of_states; current_state++)
     {
-        current_state.setIndex(index);
-        index ++;
+        states[current_state].setIndex(current_state);
 
         bool is_final;
         f >> is_final;
-        current_state.setFinal(is_final);
+        states[current_state].setFinal(is_final);
     }
 
     Edge **edges;
@@ -78,6 +82,7 @@ int main() {
         f >> number_of_edges;
 
         states[current_state].setNumberOfEdges(number_of_edges);
+
         edges[current_state] = new Edge[number_of_edges];
     }
 
@@ -102,6 +107,12 @@ int main() {
 
             edges[current_state][current_edge].setPop(pop);
             edges[current_state][current_edge].setPush(push);
+            if(pop)
+            {
+                int times_to_pop = 1;
+                f >> times_to_pop;
+                edges[current_state][current_edge].setTimesToPop(times_to_pop);
+            }
 
             if(push)
             {
@@ -113,14 +124,17 @@ int main() {
                 std::vector<LetterToPush> letters;
                 letters.resize(how_many_letters);
 
-                for (LetterToPush current : letters)
+                for (int i = 0; i < how_many_letters; i++)
                 {
-                    f >> current.letter;
-                    f >> current.times;
+                    f >> letters[i].letter;
+                    f >> letters[i].times;
                 }
 
                 edges[current_state][current_edge].setPushLetters(letters);
             }
+            std::cout << edges[current_state][current_edge].showCurrentState().showIndex() << " ";
+            std::cout << edges[current_state][current_edge].showLetter() << " ";
+            std::cout << edges[current_state][current_edge].showNextState().showIndex()<< "\n";
         }
     }
 

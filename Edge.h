@@ -30,7 +30,7 @@ class Edge {
     std::vector<LetterToPush> _push_letters;
 
 public:
-   inline Edge() { _letter = "#"; _pop =  false; _push =  false; _times_to_pop = 0; _how_many_letters = 0; _push_letters.resize(_how_many_letters)};
+   inline Edge() { _letter = "#"; _pop =  false; _push =  false; _times_to_pop = 0; _how_many_letters = 0; _push_letters.resize(_how_many_letters);};
     ~Edge() = default;
 
     void setCurrentState(State);
